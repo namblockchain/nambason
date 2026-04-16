@@ -21,7 +21,7 @@ const TopMenu = ({ data }) => {
 
       return () => window.removeEventListener("scroll", handleScroll);
     }
-  }, []);
+  }, [data]);
 
   return (
     <div id="topMenu" style={{ height: showMenu ? "80px" : 0 }}>
@@ -44,13 +44,17 @@ const TopMenu = ({ data }) => {
         >
           <i className="fa-brands fa-facebook-f"></i>
         </a>
-        <a href="https://www.youtube.com/@namihomesaigon" target="_blank">
+        <a
+          href="https://www.youtube.com/@namihomesaigon"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <i className="fa-brands fa-youtube"></i>
         </a>
-        <a href="mailto:namihome.saigon@gmail.com">
+        <a href="mailto:namihome.saigon@gmail.com" rel="noopener noreferrer">
           <i className="fa-solid fa-envelope"></i>
         </a>
-        <a href="tel:+84903052135">
+        <a href="tel:+84903052135" rel="noopener noreferrer">
           <i className="fa-solid fa-phone"></i>
         </a>
       </div>

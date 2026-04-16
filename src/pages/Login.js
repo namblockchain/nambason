@@ -28,7 +28,7 @@ const Login = () => {
     if (localLogin) {
       navigate("/portfolio");
     }
-  }, []);
+  }, [navigate]);
 
   return (
     <div id="login">

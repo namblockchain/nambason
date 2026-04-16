@@ -10,7 +10,7 @@ const Detail = () => {
   const dispatch = useDispatch();
   const { ten } = useParams();
   const { products, selectedCategory } = useSelector(
-    (state) => state.dataSlice
+    (state) => state.dataSlice,
   );
   const [detail, setDetail] = useState("");
 
@@ -112,7 +112,7 @@ const Detail = () => {
         // Tìm trên Facebook (search query)
         window.open(
           `https://www.facebook.com/search/top?q=${phoneNumber}`,
-          "_blank"
+          "_blank",
         );
         break;
       case "zalo":
@@ -147,12 +147,10 @@ const Detail = () => {
 
     if (detail?.allPhoto?.length > 0) {
       detail?.allPhoto?.map((item) =>
-        setImages((prevState) => [...prevState, `/img/${item}`])
+        setImages((prevState) => [...prevState, `/img/${item}`]),
       );
-
-      console.log("first", images);
     }
-  }, [detail]);
+  }, [detail, images]);
 
   // console.log(detail?.allPhoto);
 
