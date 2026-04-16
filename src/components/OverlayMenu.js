@@ -48,6 +48,18 @@ const OverlayMenu = () => {
             </li>
 
             {login && (
+              <>
+              <li>
+                <NavLink
+                  to={"/information"}
+                  onClick={() => {
+                  }}
+                >
+                  Information
+                </NavLink>
+
+
+              </li>
               <li onClick={handleClickClose}>
                 <NavLink
                   to={"/"}
@@ -59,6 +71,7 @@ const OverlayMenu = () => {
                   Log out
                 </NavLink>
               </li>
+              </>
             )}
 
             <li className="iconContact">

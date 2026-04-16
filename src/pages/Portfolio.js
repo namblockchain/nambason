@@ -8,54 +8,70 @@ const Portfolio = () => {
   const navigate = useNavigate();
   const dispatch = useDispatch();
   const { products, selectedCategory } = useSelector(
-    (state) => state.dataSlice
+    (state) => state.dataSlice,
   );
   const [filteredProducts, setFilteredProducts] = useState([]);
-
   const [keyword, setKeyword] = useState("");
+
+  // Hàm bỏ dấu tiếng Việt
+  const normalizeVietnamese = (str = "") => {
+    return str
+      .toLowerCase()
+      .normalize("NFD")
+      .replace(/[\u0300-\u036f]/g, "")
+      .replace(/đ/g, "d")
+      .replace(/\s+/g, " ")
+      .trim();
+  };
 
   // Lấy danh sách category không trùng
   const uniqueCategories = [
-    ...new Set(products.flatMap((product) => product.categories)),
+    ...new Set(products.flatMap((product) => product.categories || [])),
   ];
 
   const handleSearchProduct = (e) => {
-    const { value } = e.target;
-    setKeyword(value);
+    setKeyword(e.target.value);
   };
 
   useEffect(() => {
-    // Bước 1: lọc theo category
     let productsAfterCategoryFilter = [];
 
+    // Bước 1: lọc theo category
     if (selectedCategory === "All") {
-      // Lọc trùng theo ma (bỏ trùng tên)
       const uniqueMap = new Map();
+
       products.forEach((sp) => {
-        const key = sp.ma.trim().toLowerCase();
-        if (!uniqueMap.has(key)) {
+        const key = sp.ma?.trim().toLowerCase();
+        if (key && !uniqueMap.has(key)) {
           uniqueMap.set(key, sp);
         }
       });
+
       productsAfterCategoryFilter = Array.from(uniqueMap.values());
     } else {
       productsAfterCategoryFilter = products.filter((sp) =>
-        sp.categories.includes(selectedCategory)
+        sp.categories?.includes(selectedCategory),
       );
     }
 
-    // Bước 2: lọc theo từ khóa
+    // Bước 2: lọc theo từ khóa không dấu
     if (keyword.trim() !== "") {
-      const lowerKeyword = keyword.toLowerCase();
-      productsAfterCategoryFilter = productsAfterCategoryFilter.filter(
-        (sp) =>
-          sp.proName.toLowerCase().includes(lowerKeyword) ||
-          sp.title?.toLowerCase().includes(lowerKeyword) ||
-          sp.ma.toLowerCase().includes(lowerKeyword) ||
-          sp.giaBan.toLowerCase().includes(lowerKeyword) ||
-          sp.chuNha.toLowerCase().includes(lowerKeyword) ||
-          sp.address.toLowerCase().includes(lowerKeyword)
-      );
+      const normalizedKeyword = normalizeVietnamese(keyword);
+
+      productsAfterCategoryFilter = productsAfterCategoryFilter.filter((sp) => {
+        const searchFields = [
+          sp.proName,
+          sp.title,
+          sp.ma,
+          sp.giaBan,
+          sp.chuNha,
+          sp.address,
+        ];
+
+        return searchFields.some((field) =>
+          normalizeVietnamese(field).includes(normalizedKeyword),
+        );
+      });
     }
 
     setFilteredProducts(productsAfterCategoryFilter);
@@ -63,12 +79,10 @@ const Portfolio = () => {
 
   return (
     <div id="portfolio">
-      {/* trượt xuống 200px thì menu xuất hiện, có hiệu ứng giản từ trên xuống*/}
       <TopMenu />
 
       <div className="banner"></div>
       <div className="content">
-        {/* Tabs */}
         <div className="tab">
           <ul>
             <li
@@ -81,6 +95,7 @@ const Portfolio = () => {
             >
               All
             </li>
+
             {uniqueCategories.map((cat, index) => (
               <li
                 key={index}
@@ -103,11 +118,11 @@ const Portfolio = () => {
           <input
             type="text"
             placeholder="Tìm kiếm,..."
+            value={keyword}
             onChange={handleSearchProduct}
           />
         </div>
 
-        {/* Products */}
         <div className="product">
           {filteredProducts.map((item, index) => (
             <div
@@ -119,7 +134,7 @@ const Portfolio = () => {
             >
               <div className="imgWrapper">
                 <img
-                  src={`/img/${item.allPhoto[[0]]}`}
+                  src={`/img/${item.allPhoto?.[0]}`}
                   alt={item.proName || "No photo"}
                 />
               </div>

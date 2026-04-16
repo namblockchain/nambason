@@ -20,16 +20,16 @@ const HomeMenu = () => {
       </div>
       <div className="iconContact">
         <a
-          href="https://www.facebook.com/NamiHome.Official/"
+          href="https://www.facebook.com/NamBason.Official/"
           target="_blank"
           rel="noopener noreferrer"
         >
           <i className="fa-brands fa-facebook-f"></i>
         </a>
-        <a href="https://www.youtube.com/@namihomesaigon" target="_blank">
+        <a href="https://www.youtube.com/@nambason" target="_blank">
           <i className="fa-brands fa-youtube"></i>
         </a>
-        <a href="mailto:namihome.saigon@gmail.com">
+        <a href="mailto:namsaigonbason@gmail.com">
           <i className="fa-solid fa-envelope"></i>
         </a>
         <a href="tel:+84903052135">
