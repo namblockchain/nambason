@@ -3,7 +3,6 @@ import "./app.scss";
 import Home from "./pages/Home";
 import Portfolio from "./pages/Portfolio";
 import Detail from "./pages/Detail";
-import Blog from "./pages/Blog";
 import Contact from "./pages/Contact";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Index from "./pages/Index";
@@ -21,7 +20,6 @@ const App = () => {
           <Route index element={<Index />} />
           <Route path="/portfolio" element={<Portfolio />} />
           <Route path="/portfolio/:ten" element={<Detail />} />
-          {/* <Route path="/blog" element={<Blog />} /> */}
           <Route path="/contact" element={<Contact />} />
           <Route path="/tool" element={<Tool />} />
           <Route path="/login" element={<Login />} />

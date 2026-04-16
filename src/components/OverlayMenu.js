@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { updateLogin, updateOverlay } from "../redux/dataSlice";
 import { NavLink } from "react-router-dom";
@@ -27,7 +27,7 @@ const OverlayMenu = () => {
   const { login } = useSelector((state) => state.dataSlice);
   useEffect(() => {
     dispatch(updateLogin(localStorage.getItem("login")));
-  }, []);
+  }, [dispatch]);
 
   return (
     <>

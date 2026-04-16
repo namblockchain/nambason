@@ -26,7 +26,11 @@ const HomeMenu = () => {
         >
           <i className="fa-brands fa-facebook-f"></i>
         </a>
-        <a href="https://www.youtube.com/@nambason" target="_blank">
+        <a
+          href="https://www.youtube.com/@nambason"
+          target="_blank"
+          rel="noreferrer"
+        >
           <i className="fa-brands fa-youtube"></i>
         </a>
         <a href="mailto:namsaigonbason@gmail.com">

@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import TopMenu from "../components/TopMenu";
 import { useNavigate } from "react-router-dom";
-import { useDispatch, useSelector } from "react-redux";
+import { useSelector } from "react-redux";
 
 const Information = () => {
   const navigate = useNavigate();
@@ -14,7 +14,6 @@ const Information = () => {
     }
   }, [navigate]);
 
-  const dispatch = useDispatch();
   const { products, selectedCategory } = useSelector(
     (state) => state.dataSlice,
   );
@@ -33,11 +32,6 @@ const Information = () => {
       .replace(/\s+/g, " ") // gộp nhiều khoảng trắng
       .trim();
   };
-
-  // Lấy danh sách category không trùng
-  const uniqueCategories = [
-    ...new Set(products.flatMap((product) => product.categories)),
-  ];
 
   const handleSearchProduct = (e) => {
     const { value } = e.target;
