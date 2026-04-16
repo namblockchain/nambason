@@ -49,28 +49,22 @@ const OverlayMenu = () => {
 
             {login && (
               <>
-              <li>
-                <NavLink
-                  to={"/information"}
-                  onClick={() => {
-                  }}
-                >
-                  Information
-                </NavLink>
-
-
-              </li>
-              <li onClick={handleClickClose}>
-                <NavLink
-                  to={"/"}
-                  onClick={() => {
-                    localStorage.removeItem("login");
-                    dispatch(updateLogin(false));
-                  }}
-                >
-                  Log out
-                </NavLink>
-              </li>
+                <li>
+                  <NavLink to={"/information"} onClick={() => {}}>
+                    Information
+                  </NavLink>
+                </li>
+                <li onClick={handleClickClose}>
+                  <NavLink
+                    to={"/"}
+                    onClick={() => {
+                      localStorage.removeItem("login");
+                      dispatch(updateLogin(false));
+                    }}
+                  >
+                    Log out
+                  </NavLink>
+                </li>
               </>
             )}
 
@@ -82,7 +76,11 @@ const OverlayMenu = () => {
               >
                 <i className="fa-brands fa-facebook-f"></i>
               </a>
-              <a href="https://www.youtube.com/@namihomesaigon" target="_blank">
+              <a
+                href="https://www.youtube.com/@namihomesaigon"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <i className="fa-brands fa-youtube"></i>
               </a>
               <a href="mailto:namihome.saigon@gmail.com">
