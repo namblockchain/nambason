@@ -16,7 +16,7 @@ const HomeMenu = () => {
       <div className="brandName">
         <img src="./img/iconMenuW.png" alt="" />
 
-        <p>invest - realty</p>
+        {/* <p>invest - realty</p> */}
       </div>
       <div className="iconContact">
         <a
