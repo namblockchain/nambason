@@ -38,13 +38,13 @@ const OverlayMenu = () => {
           </div>
           <ul>
             <li onClick={handleClickClose}>
-              <NavLink to={"/portfolio"}>Nhà Đất</NavLink>
+              <NavLink to={"/portfolio"}>Real Estate</NavLink>
             </li>
             {/* <li onClick={handleClickClose}>
               <NavLink to={"/blog"}>Phân Tích</NavLink>
             </li> */}
             <li onClick={handleClickClose}>
-              <NavLink to={"/contact"}>Liên Hệ</NavLink>
+              <NavLink to={"/contact"}>Contact</NavLink>
             </li>
 
             {login && (
