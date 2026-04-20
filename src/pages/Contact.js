@@ -42,7 +42,10 @@ const Contact = () => {
           </div>
           <div className="addressItem">
             <h3>LOCATION</h3>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5573.18938683177!2d106.68807717636703!3d10.764839189383194!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752f1706aa5555%3A0x5e96ec20419bd0b3!2zMTAyQyDEkC4gQ-G7kW5nIFF14buzbmgsIFBoxrDhu51uZyBQaOG6oW0gTmfFqSBMw6NvLCBC4bq_biBUaMOgbmgsIEjhu5MgQ2jDrSBNaW5oLCBWaeG7h3QgTmFt!5e1!3m2!1svi!2s!4v1776326431135!5m2!1svi!2s"></iframe>
+            <iframe
+              title="Bản đồ vị trí"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5573.18938683177!2d106.68807717636703!3d10.764839189383194!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752f1706aa5555%3A0x5e96ec20419bd0b3!2zMTAyQyDEkC4gQ-G7kW5nIFF14buzbmgsIFBoxrDhu51uZyBQaOG6oW0gTmfFqSBMw6NvLCBC4bq_biBUaMOgbmgsIEjhu5MgQ2jDrSBNaW5oLCBWaeG7h3QgTmFt!5e1!3m2!1svi!2s!4v1776326431135!5m2!1svi!2s"
+            ></iframe>
           </div>
         </div>
       </div>

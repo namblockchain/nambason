@@ -93,7 +93,7 @@ const Detail = () => {
 
   useEffect(() => {
     dispatch(updateLogin(localStorage.getItem("login")));
-  }, []);
+  }, [dispatch]);
 
   const [phoneNumber, setPhoneNumber] = useState("");
 
