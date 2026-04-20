@@ -84,7 +84,7 @@ const OverlayMenu = () => {
                 <i className="fa-brands fa-youtube"></i>
               </a>
               <a
-                href="mailto:namihome.saigon@gmail.com"
+                href="mailto:namsaigonbason@gmail.com"
                 rel="noopener noreferrer"
               >
                 <i className="fa-solid fa-envelope"></i>

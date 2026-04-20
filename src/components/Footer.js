@@ -21,7 +21,7 @@ const Footer = () => {
           <NavLink to={"/contact"}>Liên Hệ</NavLink>
         </li>
       </ul>
-      <p>Copyright 2025 © NAM BASON</p>
+      <p>Copyright 2025 © NAM BA SON</p>
     </footer>
   );
 };
