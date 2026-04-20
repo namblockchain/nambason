@@ -5,7 +5,7 @@ const Login = () => {
   const navigate = useNavigate();
   const [info, setInfo] = useState("");
 
-  console.log(info);
+  // console.log(info);
 
   const onchangeInput = (e) => {
     const { name, value } = e.target;
