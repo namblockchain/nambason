@@ -25,6 +25,10 @@
     img {
       width: 100%;
       height: 100vh;
+      object-fit: cover;
+
+      background-position: center; // canh giữa ảnh
+      background-repeat: no-repeat; // không lặp lại
     }
 
     .slick-dots {
