@@ -112,7 +112,12 @@ const Information = () => {
           <tbody>
             {filteredProducts.map((item, index) => {
               return (
-                <tr key={index}>
+                <tr
+                  key={index}
+                  onClick={() => {
+                    navigate(`/portfolio/${item.ma}`);
+                  }}
+                >
                   <td>{item.proName}</td>
                   <td>{item.address}</td>
                   <td>{item.dienTich}</td>
