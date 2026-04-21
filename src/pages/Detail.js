@@ -181,7 +181,7 @@ const Detail = () => {
             <NavLink to={"/"}>Home \</NavLink>
           </li>
           <li>
-            <NavLink to={"/portfolio"}>Nhà Đất \</NavLink>
+            <NavLink to={"/portfolio"}>Real Estate \</NavLink>
           </li>
           <li>
             <NavLink to={"/portfolio"}>{selectedCategory}</NavLink>
