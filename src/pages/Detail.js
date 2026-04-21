@@ -134,25 +134,42 @@ const Detail = () => {
 
   const [images, setImages] = useState([]);
 
+  // useEffect(() => {
+  //   if (detail?.chuNha) {
+  //     // Lấy số điện thoại, bỏ hết ký tự không phải số
+  //     const onlyNumber = detail.chuNha.replace(/\D/g, "");
+  //     setPhoneNumber(onlyNumber);
+  //   }
+  //   window.scrollTo({
+  //     top: 0,
+  //     behavior: "smooth",
+  //   });
+
+  //   if (detail?.allPhoto?.length > 0) {
+  //     detail?.allPhoto?.map((item) =>
+  //       setImages((prevState) => [...prevState, `/img/${item}`]),
+  //     );
+  //   }
+  // }, [detail, images]); //lỗi không scroll được, lúc nào cũng bị chạy lệnh scroll top
+
   useEffect(() => {
     if (detail?.chuNha) {
-      // Lấy số điện thoại, bỏ hết ký tự không phải số
       const onlyNumber = detail.chuNha.replace(/\D/g, "");
       setPhoneNumber(onlyNumber);
     }
+
     window.scrollTo({
       top: 0,
-      // behavior: "smooth",
+      behavior: "smooth",
     });
 
     if (detail?.allPhoto?.length > 0) {
-      detail?.allPhoto?.map((item) =>
-        setImages((prevState) => [...prevState, `/img/${item}`]),
-      );
+      const newImages = detail.allPhoto.map((item) => `/img/${item}`);
+      setImages(newImages);
+    } else {
+      setImages([]);
     }
-  }, [detail, images]);
-
-  // console.log(detail?.allPhoto);
+  }, [detail]);
 
   return (
     <>
