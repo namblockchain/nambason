@@ -63,7 +63,7 @@ const Index = () => {
 
       <div className="welcome">
         <p>welcome to</p>
-        <h1>NAM BA SON</h1>
+        <h1>NAM BASON</h1>
         <button type="button">
           <p>
             <NavLink to={"/portfolio"}>
