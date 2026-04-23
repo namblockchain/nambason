@@ -734,6 +734,24 @@ const initialState = {
       chuNha: "0909120663 - Cô Nga",
       map: "",
     },
+
+    {
+      ma: "43",
+      proName: "NHÀ MẶT LÝ CHÍNH THẮNG",
+      title: " 250B Lý Chính Thắng",
+      address: " 250B Lý Chính Thắng, Phường XUÂN HOÀ(P.9, Quận 3 cũ), TP.HCM",
+      dienTich:"Ngang 22m x Dài 13m, Công nhận 236m², DTS 1000m²",
+      ketCau: "2 tầng, GPXD Hầm 7 tầng",
+      giaBan: "160 tỷ",
+      hopDong: "200 Triệu/tháng",
+      huong: "Tây Bắc",
+      phapLy: "Cá nhân",
+      viTri: "Giữa đường Lý Chính Thắng với Nguyễn Thông",
+      allPhoto: ["43.1.jpg", "43.2.jpg", "43.3.jpg", "43.4.jpg"],
+      categories: ["Nhà phố", "Building"],
+      chuNha: "0903350077 - Anh Trung",
+      map: "",
+    },
   ],
 };
 
