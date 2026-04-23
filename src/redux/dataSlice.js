@@ -32,7 +32,8 @@ const initialState = {
       proName: "TOÀ NHÀ VĂN PHÒNG ",
       title: "28 Trần Quốc Thảo",
       address: "28 Trần Quốc Thảo, Phường Xuân Hoà (P.VTS Q3 cũ), TP HCM",
-      dienTich:"Ngang 4.5m x Dài 43m Nở hậu 20m, Công nhận 553,3m², DTS 1.922m²",
+      dienTich:
+        "Ngang 4.5m x Dài 43m Nở hậu 20m, Công nhận 553,3m², DTS 1.922m²",
       ketCau: "Hầm, 7 tầng, Sân thượng",
       giaBan: "350 tỷ",
       hopDong: "800 triệu",
@@ -95,7 +96,8 @@ const initialState = {
       ma: "5",
       proName: "NHÀ MẶT TIỀN NGUYỄN KHẮC NHU",
       title: "25-27 Nguyễn Khắc Nhu",
-      address:"25-27 Nguyễn Khắc Nhu, Phường Cầu Ông Lãnh (Cô Giang Q1cũ), TP HCM",
+      address:
+        "25-27 Nguyễn Khắc Nhu, Phường Cầu Ông Lãnh (Cô Giang Q1cũ), TP HCM",
       dienTich: "Ngang 11m x Dài 29m, Công nhận 290,3m², DTS 600m²",
       ketCau: "3Tầng",
       giaBan: "185 tỷ",
@@ -127,7 +129,8 @@ const initialState = {
       ma: "7",
       proName: "TOÀ NHÀ VĂN PHÒNG",
       title: "27-29 Nam Kỳ Khởi Nghĩa",
-      address:"27-29 Nam Kỳ Khởi Nghĩa, Phường Sài Gòn (Nguyễn Thái Bình, Quận 1), TP HCM",
+      address:
+        "27-29 Nam Kỳ Khởi Nghĩa, Phường Sài Gòn (Nguyễn Thái Bình, Quận 1), TP HCM",
       dienTich: "Ngang 8m x Dài 26m, Công nhận 209m², DTS 893,98m²",
       ketCau: "2 Hầm, 6tầng",
       giaBan: "240 tỷ",
@@ -175,7 +178,8 @@ const initialState = {
       ma: "10",
       proName: "TOÀN NHÀ VĂN PHÒNG",
       title: "2Bis Công Trường Quốc Tế",
-      address:"2Bis Công Trường Quốc Tế, Phường Xuân Hoà (VTS, Quận 3 cũ), TP HCM",
+      address:
+        "2Bis Công Trường Quốc Tế, Phường Xuân Hoà (VTS, Quận 3 cũ), TP HCM",
       dienTich: "Ngang 15m x Dài 26m, công nhận 366,2m², DTS 2316m²",
       ketCau: "2 Hầm, 8 tầng",
       giaBan: "700 tỷ",
@@ -208,7 +212,8 @@ const initialState = {
       ma: "12",
       proName: "TOÀ NHÀ VĂN PHÒNG",
       title: "546-548 Cách Mạng Tháng 8",
-      address:"546-548 Cách Mạng Tháng 8, Phường Nhiêu Lộc (11, Quận 3 cũ), TP HCM",
+      address:
+        "546-548 Cách Mạng Tháng 8, Phường Nhiêu Lộc (11, Quận 3 cũ), TP HCM",
       dienTich: "Ngang 15m x Dài 36m, Nở hậu 26m , Công nhận 668m², DTS 6000m²",
       ketCau: "2 Hầm 10 tầng",
       giaBan: "450 tỷ",
@@ -225,7 +230,8 @@ const initialState = {
       ma: "13",
       proName: "TOÀ NHÀ VĂN PHÒNG",
       title: "11Bis Nguyễn Gia Thiều",
-      address:"11Bis Nguyễn Gia Thiều, Phường Xuân Hoà (VTS, Quận 3 cũ), TP HCM",
+      address:
+        "11Bis Nguyễn Gia Thiều, Phường Xuân Hoà (VTS, Quận 3 cũ), TP HCM",
       dienTich: "Ngang 26m x Dài 39m, Công nhận 995m², DTS 4826m²",
       ketCau: "Hầm 10 tầng",
       giaBan: "700 tỷ",
@@ -260,7 +266,8 @@ const initialState = {
       ma: "15",
       proName: "TOÀ NHÀ VĂN PHÒNG",
       title: "307B Nguyễn Văn Trỗi",
-      address:"307B Nguyễn Văn Trỗi, Phường Tân Sơn Nhất (1 Quận TB cũ), TP HCM",
+      address:
+        "307B Nguyễn Văn Trỗi, Phường Tân Sơn Nhất (1 Quận TB cũ), TP HCM",
       dienTich: "Ngang 11m x Dài 15m, Công nhận 168,72m², DTS 1262,73m²",
       ketCau: "Hầm 10 tầng",
       giaBan: "155 tỷ",
@@ -278,7 +285,8 @@ const initialState = {
       proName: "TOÀ NHÀ VĂN PHÒNG",
       title: "11Bis Huỳnh Tịnh Của",
       address: "11Bis Huỳnh Tịnh Của, Phường Xuân Hoà (P. 7 Quận 3 cũ), TP HCM",
-      dienTich:"Ngang 13,6m x Dài 31,6m,Thóp hậu 10m, Công nhận 399,3m², DTS 399,3m²",
+      dienTich:
+        "Ngang 13,6m x Dài 31,6m,Thóp hậu 10m, Công nhận 399,3m², DTS 399,3m²",
       ketCau: "2tầng, GPXD 10 tầng",
       giaBan: "238 tỷ",
       hopDong: " Trống Triệu/tháng",
@@ -294,7 +302,8 @@ const initialState = {
       ma: "17",
       proName: "TOÀ NHÀ VĂN PHÒNG",
       title: "111 đường Lý Chính Thắng",
-      address:"111 đường Lý Chính Thắng, Phường Xuân Hoà (VTS Quận 3cũ), TP HCM",
+      address:
+        "111 đường Lý Chính Thắng, Phường Xuân Hoà (VTS Quận 3cũ), TP HCM",
       dienTich: "Ngang 11,5m x Dài 29m Nở hậu 12m, Công nhận 336m², DTS 2329m²",
       ketCau: "Hầm 12 tầng",
       giaBan: "330 tỷ",
@@ -311,7 +320,8 @@ const initialState = {
       ma: "18",
       proName: "TOÀ NHÀ VĂN PHÒNG",
       title: "485 Tô Ngọc Vân",
-      address:"485 Tô Ngọc Vân, Phường Tam Bình (Tam Phú,TP Thủ Đức cũ), TP HCM",
+      address:
+        "485 Tô Ngọc Vân, Phường Tam Bình (Tam Phú,TP Thủ Đức cũ), TP HCM",
       dienTich: "Ngang 14m x Dài 38m, Công nhận 501.1m², DTS 2.000m²",
       ketCau: "Hầm 4 tầng",
       giaBan: "95 tỷ",
@@ -328,7 +338,8 @@ const initialState = {
       ma: "19",
       proName: "TOÀ NHÀ VĂN PHÒNG",
       title: "369B Nguyễn Trãi ",
-      address:"369B Nguyễn Trãi , Phường Cầu Ông Lãnh (Nguyễn Cư Trinh, Quận 1 cũ), TP HCM",
+      address:
+        "369B Nguyễn Trãi , Phường Cầu Ông Lãnh (Nguyễn Cư Trinh, Quận 1 cũ), TP HCM",
       dienTich: "Ngang 15m x Dài 30m, Công nhận 386,5m², DTS 2.700m²",
       ketCau: "2 Hầm 10 tầng",
       giaBan: "450tỷ",
@@ -362,7 +373,8 @@ const initialState = {
       ma: "21",
       proName: "BIỆT THỰ LAN ANH VILLAGE",
       title: "C6 Lan Anh Village, Khu Đô Thị Thủ Thiêm",
-      address:"C6 Lan Anh Village, Khu Đô Thị Thủ Thiêm, Phường An Khánh (P. cũ: Thủ Thiêm), TP. Thủ Đức, TP.HCM",
+      address:
+        "C6 Lan Anh Village, Khu Đô Thị Thủ Thiêm, Phường An Khánh (P. cũ: Thủ Thiêm), TP. Thủ Đức, TP.HCM",
       dienTich: "Ngang 15m x Dài 24,9m, Công nhận 372,8m², DTS 217,2m²",
       ketCau: "3 tầng",
       giaBan: "200tỷ",
@@ -379,7 +391,8 @@ const initialState = {
       ma: "22",
       proName: "CĂN HỘ DỊCH VỤ",
       title: "42/4 Hồ Hảo Hớn",
-      address:"42/4 Hồ Hảo Hớn, Phường Cầu Ông Lãnh (P. Cô Giang, Quận 1 cũ), TP.HCM",
+      address:
+        "42/4 Hồ Hảo Hớn, Phường Cầu Ông Lãnh (P. Cô Giang, Quận 1 cũ), TP.HCM",
       dienTich: "Ngang 5,43m x Dài 22,19m, Công nhận 323,2m², DTS 884,4m²",
       ketCau: "5 tầng",
       giaBan: "140 ỷ",
@@ -481,7 +494,8 @@ const initialState = {
       ma: "28",
       proName: "BIỆT THỰ TRẦN KHÁNH DƯ",
       title: "7 Trần Khánh Dư,",
-      address:"7 Trần Khánh Dư, Phường Tân Định (P.Tân Định, Quận 1 cũ), TP.HCM",
+      address:
+        "7 Trần Khánh Dư, Phường Tân Định (P.Tân Định, Quận 1 cũ), TP.HCM",
       dienTich: "Ngang 14,1m x Dài 26,05m, Công nhận 367m², DTS 500m²",
       ketCau: " 3 tầng",
       giaBan: "165 tỷ",
@@ -498,7 +512,8 @@ const initialState = {
       ma: "29",
       proName: "KHÁCH SẠN LÊ THÁNH TÔN",
       title: "42 Lê Thánh Tôn",
-      address:"42 Lê Thánh Tôn, Phường Sài Gòn (P.Bến Nghé, Quận 1 cũ), TP.HCM",
+      address:
+        "42 Lê Thánh Tôn, Phường Sài Gòn (P.Bến Nghé, Quận 1 cũ), TP.HCM",
       dienTich: "Ngang 4,4m x Dài 21m, Công nhận 92,4m², DTS 626,6m²",
       ketCau: " Hầm 8 tầng",
       giaBan: "120 tỷ",
@@ -515,7 +530,8 @@ const initialState = {
       ma: "30",
       proName: "TOÀ NHÀ VĂN PHÒNG",
       title: "290 Nam Kỳ Khởi Nghĩa",
-      address:"290 Nam Kỳ Khởi Nghĩa, Phường Xuân Hoà (P.8, Quận 3 cũ), TP.HCM",
+      address:
+        "290 Nam Kỳ Khởi Nghĩa, Phường Xuân Hoà (P.8, Quận 3 cũ), TP.HCM",
       dienTich: "Ngang 22m x Dài 16,8m, Công nhận 368m², DTS 4693,8m²",
       ketCau: "2 Hầm 14 tầng",
       giaBan: "715 tỷ",
@@ -549,7 +565,8 @@ const initialState = {
       ma: "32",
       proName: "NHÀ MẶT TIỀN TRẦN QUỐC THẢO",
       title: "125A Trần Quốc Thảo,",
-      address:"125A Trần Quốc Thảo, Phường Xuân Hoà (P.VTS, Quận 3 cũ), TP.HCM",
+      address:
+        "125A Trần Quốc Thảo, Phường Xuân Hoà (P.VTS, Quận 3 cũ), TP.HCM",
       dienTich: "Ngang 14m x Dài 40m, Công nhận 534,3m², DTS 961m²",
       ketCau: "Hầm 3 tầng",
       giaBan: "350 tỷ",
@@ -584,7 +601,8 @@ const initialState = {
       proName: "NHÀ MẶT VÕ VĂN TẦN",
       title: "291 Võ Văn Tần",
       address: "291 Võ Văn Tần, Phường Bàn Cờ (P.5, Quận 3 cũ), TP.HCM",
-      dienTich:"Ngang 7,3m x Dài 13m, Nở hậu 9,5m, Công nhận 86,7m², DTS 637.6m²",
+      dienTich:
+        "Ngang 7,3m x Dài 13m, Nở hậu 9,5m, Công nhận 86,7m², DTS 637.6m²",
       ketCau: "4 tầng",
       giaBan: "65 tỷ",
       hopDong: "180 Triệu/tháng",
@@ -600,7 +618,8 @@ const initialState = {
       ma: "35",
       proName: "NHÀ MẶT 3 THÁNG 2 ",
       title: "33-35 đường 3 Tháng 2",
-      address:"33-35 đường 3 Tháng 2, Phường Hoà Hưng (P.11, Quận 10 cũ), TP.HCM",
+      address:
+        "33-35 đường 3 Tháng 2, Phường Hoà Hưng (P.11, Quận 10 cũ), TP.HCM",
       dienTich: "Ngang 18m x Dài 25m, Nở hậu 24m, Công nhận 499m², DTS 1300m²",
       ketCau: "4 tầng",
       giaBan: "350 tỷ",
@@ -651,7 +670,8 @@ const initialState = {
       ma: "38",
       proName: "NHÀ MẶT TÔ HIẾN THÀNH",
       title: "185-185A Tô Hiến Thành",
-      address:"185-185A Tô Hiến Thành, Phường Hoà Hưng (P.13, Quận 10 cũ), TP.HCM",
+      address:
+        "185-185A Tô Hiến Thành, Phường Hoà Hưng (P.13, Quận 10 cũ), TP.HCM",
       dienTich:
         "Ngang 9,3m x Dài 25m, Thóp hậu 8,7m, Công nhận 232m², DTS 1100m²",
       ketCau: "6 tầng",
@@ -669,7 +689,8 @@ const initialState = {
       ma: "39",
       proName: "NHÀ MẶT PHAN XÍCH LONG",
       title: "169-171 Phan Xích Long",
-      address:"169-171 Phan Xích Long, Phường Cầu Kiệu (P.2, Quận PN cũ), TP.HCM",
+      address:
+        "169-171 Phan Xích Long, Phường Cầu Kiệu (P.2, Quận PN cũ), TP.HCM",
       dienTich: "Ngang 16m x Dài 16m, Công nhận 256m², DTS 800m²",
       ketCau: "4 tầng",
       giaBan: "193 tỷ",
@@ -688,7 +709,8 @@ const initialState = {
       title: "35/11 Trần Đình Xu.",
       address:
         "35/11 Trần Đình Xu, Phường Cầu Ông Lãnh(P.Ccầu Kho, Quận 1 cũ), TP.HCM",
-      dienTich:"Ngang 14,69 m x Dài 18m, Nở hậu 20m, Công nhận  320,8m², DTS 148,4m²",
+      dienTich:
+        "Ngang 14,69 m x Dài 18m, Nở hậu 20m, Công nhận  320,8m², DTS 148,4m²",
       ketCau: "2 tầng",
       giaBan: "82 tỷ",
       hopDong: "80 Triệu/tháng",
@@ -700,12 +722,14 @@ const initialState = {
       chuNha: "0909762672 - Nam",
       map: "",
     },
-     {
+    {
       ma: "41",
       proName: "NHÀ MẶT TIỀN NAM KỲ KHỞI NGHĨA",
       title: "191 Nam Kỳ Khởi Nghĩa",
-      address: "191 Nam Kỳ Khởi Nghĩa, Phường XUÂN HOÀ(P.VTS, Quận 3 cũ), TP.HCM",
-      dienTich:"Ngang 6,12m x Dài 22,44m, Nở hậu 6,37m, Công nhận 137m², DTS 884,39m²",
+      address:
+        "191 Nam Kỳ Khởi Nghĩa, Phường XUÂN HOÀ(P.VTS, Quận 3 cũ), TP.HCM",
+      dienTich:
+        "Ngang 6,12m x Dài 22,44m, Nở hậu 6,37m, Công nhận 137m², DTS 884,39m²",
       ketCau: "Hầm 8 tầng",
       giaBan: "150 tỷ",
       hopDong: "460 Triệu/tháng",
@@ -717,12 +741,13 @@ const initialState = {
       chuNha: "0909762672 - Nam",
       map: "",
     },
-     {
+    {
       ma: "42",
       proName: "NHÀ MẶT TIỀN NGÔ THỜI NHIỆM",
       title: "15-17 Ngô Thời Nhiệm",
-      address: "15-17 Ngô Thời Nhiệm, Phường XUÂN HOÀ(P.VTS, Quận 3 cũ), TP.HCM",
-      dienTich:"Ngang 22m x Dài 16m, Công nhận 336m², DTS 301,1m²",
+      address:
+        "15-17 Ngô Thời Nhiệm, Phường XUÂN HOÀ(P.VTS, Quận 3 cũ), TP.HCM",
+      dienTich: "Ngang 22m x Dài 16m, Công nhận 336m², DTS 301,1m²",
       ketCau: "2 tầng, GPXD Hầm 7 tầng",
       giaBan: "270 tỷ",
       hopDong: "150 Triệu/tháng",
@@ -740,7 +765,7 @@ const initialState = {
       proName: "NHÀ MẶT LÝ CHÍNH THẮNG",
       title: " 250B Lý Chính Thắng",
       address: " 250B Lý Chính Thắng, Phường XUÂN HOÀ(P.9, Quận 3 cũ), TP.HCM",
-      dienTich:"Ngang 22m x Dài 13m, Công nhận 236m², DTS 1000m²",
+      dienTich: "Ngang 22m x Dài 13m, Công nhận 236m², DTS 1000m²",
       ketCau: "2 tầng, GPXD Hầm 7 tầng",
       giaBan: "160 tỷ",
       hopDong: "200 Triệu/tháng",
