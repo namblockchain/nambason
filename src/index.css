@@ -18,7 +18,7 @@ code {
   bottom: 45px; /* Đẩy text lên thêm 10px so với ban đầu */
   left: 50%;
   transform: translateX(-50%); /* Căn giữa chữ */
-  font-size: 20px; /* Cỡ chữ nhỏ */
+  font-size: 18px; /* Cỡ chữ nhỏ */
   font-weight: bold;
   color: white;
   text-transform: uppercase;
