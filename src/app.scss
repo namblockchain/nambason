@@ -71,13 +71,13 @@
       text-transform: uppercase;
       color: white;
       text-align: center;
-      font-size: 32px;
+      font-size: 30px;
     }
 
     h1 {
       color: white;
       text-align: center;
-      font-size: 56px;
+      font-size: 36px;
     }
 
     button {
@@ -1003,3 +1003,20 @@ footer {
     transform: translateY(0);
   }
 }
+
+.banner-text {
+  position: absolute;
+  bottom: 45px; /* Đẩy text lên thêm 10px so với ban đầu */
+  left: 50%;
+  transform: translateX(-50%); /* Căn giữa chữ */
+  font-size: 20px; /* Cỡ chữ nhỏ */
+  font-weight: bold;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-family: "Montserrat", sans-serif;
+  padding: 5px 15px;
+  border-radius: 5px; /* Giữ bo góc nhưng không có nền đen */
+}
+
+
