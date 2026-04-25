@@ -1004,19 +1004,54 @@ footer {
   }
 }
 
+/* Đảm bảo hình ảnh trong Carousel không bị kéo dài */
+.banner img {
+  width: 100%;
+  height: auto; /* Đảm bảo tỷ lệ hình ảnh được giữ nguyên */
+  object-fit: cover; /* Đảm bảo ảnh sẽ cover hết khung nhưng không bị kéo dài */
+}
+
+/* Đảm bảo banner-text không bị ảnh hưởng khi thu nhỏ */
 .banner-text {
   position: absolute;
-  bottom: 45px; /* Đẩy text lên thêm 10px so với ban đầu */
+  bottom: 45px; /* Đặt text ở dưới cùng của ảnh */
   left: 50%;
   transform: translateX(-50%); /* Căn giữa chữ */
-  font-size: 18px; /* Cỡ chữ nhỏ */
+  font-size: 20px; /* Cỡ chữ nhỏ */
   font-weight: bold;
   color: white;
   text-transform: uppercase;
   letter-spacing: 1px;
   font-family: "Montserrat", sans-serif;
+  background: rgba(0, 0, 0, 0.0); /* Nền mờ để chữ nổi bật */
   padding: 5px 15px;
-  border-radius: 5px; /* Giữ bo góc nhưng không có nền đen */
+  border-radius: 5px;
+  white-space: nowrap; /* Ngăn không cho chữ xuống dòng */
+  overflow: hidden; /* Ẩn phần chữ bị tràn */
 }
 
+/* Thêm media query để điều chỉnh chữ trên màn hình nhỏ (mobile) */
+@media (max-width: 768px) {
+  .banner img {
+    height: 60vh; /* Đảm bảo hình ảnh luôn giữ tỷ lệ với chiều cao không bị kéo dài */
+  }
+
+  .banner-text {
+    font-size: 16px; /* Giảm cỡ chữ trên màn hình nhỏ */
+    bottom: 5px; /* Đặt chữ cách dưới một chút để vừa vặn hơn */
+    padding: 5px 10px; /* Điều chỉnh padding */
+  }
+}
+
+/* Giảm kích thước chữ trên các màn hình cực nhỏ (mobile nhỏ hoặc chiều rộng rất hẹp) */
+@media (max-width: 480px) {
+  .banner img {
+    height: 50vh; /* Hình ảnh sẽ chiếm khoảng 50% chiều cao màn hình */
+  }
+
+  .banner-text {
+    font-size: 14px; /* Giảm thêm cỡ chữ */
+    bottom: 5px; /* Giảm khoảng cách dưới */
+  }
+}
 
